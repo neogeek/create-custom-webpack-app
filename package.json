@@ -1,24 +1,24 @@
 {
-    "name": "@neogeek/create-custom-webpack-app",
-    "description": "A no-frill webpack cli that requires next to nothing to get started with.",
-    "version": "1.0.0",
-    "bin": {
-      "create-custom-webpack-app": "./bin/create-custom-webpack-app"
-    },
-    "engines": {
-      "node": ">=12.0"
-    },
-    "license": "MIT",
-    "authors": [
-      {
-        "name": "Scott Doxey",
-        "email": "hello@scottdoxey.com",
-        "homepage": "http://scottdoxey.com/"
-      }
-    ],
-    "homepage": "https://github.com/neogeek/create-custom-webpack-app",
-    "repository": {
-      "type": "git",
-      "url": "git://github.com/neogeek/create-custom-webpack-app.git"
+  "name": "@neogeek/create-custom-webpack-app",
+  "description": "A no-frill webpack cli that requires next to nothing to get started with.",
+  "version": "1.0.0",
+  "bin": {
+    "create-custom-webpack-app": "./bin/create-custom-webpack-app"
+  },
+  "engines": {
+    "node": ">=12.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Scott Doxey",
+      "email": "hello@scottdoxey.com",
+      "homepage": "http://scottdoxey.com/"
     }
+  ],
+  "homepage": "https://github.com/neogeek/create-custom-webpack-app",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neogeek/create-custom-webpack-app.git"
   }
+}
