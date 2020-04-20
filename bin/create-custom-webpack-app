@@ -4,7 +4,7 @@ REDON=$(tput setaf 1)
 GREENON=$(tput setaf 2)
 COLOROFF=$(tput sgr0)
 
-CWD=$(pwd)
+DIR=$(cd $(dirname $0); cd $(dirname $(readlink $0)); echo $(pwd -P))
 
 PROJECT_DIRECTORY="${1}"
 
@@ -32,11 +32,11 @@ fi
 
 (
 
-    cd "${PROJECT_DIRECTORY}"
-
     printf "Creating a React application in ${GREENON}${PROJECT_DIRECTORY}${COLOROFF}\n\n"
 
-    rsync -avq "${CWD}/template/" "${PROJECT_DIRECTORY}"
+    rsync -rq "${DIR}/../template/" "${PROJECT_DIRECTORY}"
+
+    cd "${PROJECT_DIRECTORY}"
 
     npm install
 
