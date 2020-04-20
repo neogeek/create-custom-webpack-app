@@ -38,6 +38,8 @@ fi
 
     cd "${PROJECT_DIRECTORY}"
 
+    mv gitignore.txt .gitignore
+
     npm install
 
     git init
