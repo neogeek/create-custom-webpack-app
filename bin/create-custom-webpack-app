@@ -6,9 +6,9 @@ COLOROFF=$(tput sgr0)
 
 CWD=$(pwd)
 
-DIRECTORY="${1}"
+PROJECT_DIRECTORY="${1}"
 
-if [ -z "${DIRECTORY}" ]; then
+if [ -z "${PROJECT_DIRECTORY}" ]; then
 
     printf "${REDON}Error: No directory specified.${COLOROFF}\n\n"
 
@@ -20,9 +20,9 @@ if [ -z "${DIRECTORY}" ]; then
 
 fi
 
-mkdir -p "${DIRECTORY}"
+mkdir -p "${PROJECT_DIRECTORY}"
 
-if [ $(ls -A "${DIRECTORY}") ]; then
+if [ $(ls -A "${PROJECT_DIRECTORY}") ]; then
 
     printf "${REDON}Error: Directory is not empty.${COLOROFF}\n"
 
@@ -32,11 +32,11 @@ fi
 
 (
 
-    cd "${DIRECTORY}"
+    cd "${PROJECT_DIRECTORY}"
 
-    printf "Creating a React application in ${GREENON}${DIRECTORY}${COLOROFF}\n\n"
+    printf "Creating a React application in ${GREENON}${PROJECT_DIRECTORY}${COLOROFF}\n\n"
 
-    rsync -avq "${CWD}/template/" "${DIRECTORY}"
+    rsync -avq "${CWD}/template/" "${PROJECT_DIRECTORY}"
 
     npm install
 
@@ -48,11 +48,11 @@ fi
 
     printf "\nSuccess! 🎉🎉🎉\n\n"
 
-    printf "A React application was created in ${GREENON}${DIRECTORY}${COLOROFF}\n\n"
+    printf "A React application was created in ${GREENON}${PROJECT_DIRECTORY}${COLOROFF}\n\n"
 
     printf "Start by typing:\n\n"
 
-    printf "  $ cd ${GREENON}${DIRECTORY}${COLOROFF}\n"
+    printf "  $ cd ${GREENON}${PROJECT_DIRECTORY}${COLOROFF}\n"
     printf "  $ npm start\n"
 
 )
