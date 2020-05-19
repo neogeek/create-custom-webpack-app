@@ -1,15 +1,15 @@
 {
-    "dependencies": {
-        "react": "16.13.1",
-        "react-dom": "16.13.1",
-        "styled-components": "5.1.0"
-    },
-    "devDependencies": {
-        "@neogeek/custom-webpack-cli": "1.1.0"
-    },
-    "scripts": {
-        "start": "custom-webpack-dev-server-cli",
-        "build": "custom-webpack-cli"
-    },
-    "private": true
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-components": "5.1.0"
+  },
+  "devDependencies": {
+    "@neogeek/custom-webpack-cli": "2.0.0"
+  },
+  "scripts": {
+    "start": "custom-webpack-dev-server-cli",
+    "build": "custom-webpack-cli"
+  },
+  "private": true
 }
