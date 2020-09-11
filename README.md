@@ -15,3 +15,9 @@ $ npm install @neogeek/create-custom-webpack-app -g
 ```bash
 $ create-custom-webpack-app <directory>
 ```
+
+or via [NPX](https://www.npmjs.com/package/npx)
+
+```bash
+$ npx @neogeek/create-custom-webpack-app <directory>
+```
