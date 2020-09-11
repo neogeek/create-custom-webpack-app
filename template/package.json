@@ -2,10 +2,10 @@
   "dependencies": {
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "styled-components": "5.1.1"
+    "styled-components": "5.2.0"
   },
   "devDependencies": {
-    "@neogeek/custom-webpack-cli": "2.1.0"
+    "@neogeek/custom-webpack-cli": "2.2.0"
   },
   "scripts": {
     "start": "custom-webpack-dev-server-cli",
