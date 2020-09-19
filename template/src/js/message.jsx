@@ -1,10 +1,12 @@
 import React from 'react';
 
+import { StyledMessage } from './message.styles';
+
 const Message = ({ greeting = 'Hello', name }) => {
     return (
-        <div>
+        <StyledMessage>
             {greeting} {name}
-        </div>
+        </StyledMessage>
     );
 };
 
