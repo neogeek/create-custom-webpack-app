@@ -5,7 +5,7 @@
     "styled-components": "5.2.1"
   },
   "devDependencies": {
-    "@neogeek/custom-webpack-cli": "2.8.0"
+    "@neogeek/custom-webpack-cli": "2.9.0"
   },
   "scripts": {
     "start": "custom-webpack-dev-server-cli",
