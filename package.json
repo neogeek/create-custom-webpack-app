@@ -1,7 +1,7 @@
 {
   "name": "@neogeek/create-custom-webpack-app",
   "description": "A no-frill webpack cli that requires next to nothing to get started with.",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "bin": {
     "create-custom-webpack-app": "./bin/create-custom-webpack-app"
   },
